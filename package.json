@@ -1,0 +1,30 @@
+{
+  "name": "zhihudaily-api",
+  "version": "1.0.0",
+  "description": "zhihu daily api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://derycktse@github.com/derycktse/zhihudaily-api.git"
+  },
+  "keywords": [
+    "zhihu"
+  ],
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "author": "Derycktse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/derycktse/zhihudaily-api/issues"
+  },
+  "homepage": "https://github.com/derycktse/zhihudaily-api#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "http-proxy-middleware": "^0.17.4"
+  }
+}
