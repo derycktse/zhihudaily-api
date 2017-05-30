@@ -13,21 +13,21 @@ const api = {
 const proxyTable = {
     '/lastest': {
         target: api.lastest,
-        changeOrigin: true,
+        // changeOrigin: true,
         pathRewrite: {
             "^/lastest": ""
         }
     },
     '/before': {
         target: api.beforeDate,
-        changeOrigin: true,
+        // changeOrigin: true,
         pathRewrite: {
             '^/before': ''
         }
     },
     '/news': {
         target: api.newsDetail,
-        changeOrigin: true,
+        // changeOrigin: true,
         pathRewrite: {
             '^/news': ''
         }
@@ -41,7 +41,7 @@ app.use(function (req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', '*');
 
     // Request methods you wish to allow
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    // res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
 
     // Request headers you wish to allow
     // res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
@@ -51,7 +51,7 @@ app.use(function (req, res, next) {
     // res.setHeader('Access-Control-Allow-Credentials', true);
 
 
-    res.setHeader('Content-Type','application/json; charset=utf-8')
+    res.setHeader('content-type','text/html; charset=utf-8')
     // Pass to next layer of middleware
     next();
 });
