@@ -13,21 +13,21 @@ const api = {
 const proxyTable = {
     '/lastest': {
         target: api.lastest,
-        // changeOrigin: true,
+        changeOrigin: true,
         pathRewrite: {
             "^/lastest": ""
         }
     },
     '/before': {
         target: api.beforeDate,
-        // changeOrigin: true,
+        changeOrigin: true,
         pathRewrite: {
             '^/before': ''
         }
     },
     '/news': {
         target: api.newsDetail,
-        // changeOrigin: true,
+        changeOrigin: true,
         pathRewrite: {
             '^/news': ''
         }
